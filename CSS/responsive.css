@@ -1,0 +1,261 @@
+@media only screen and (min-width: 1400px) {
+    .abute__discription{
+        font-size: 1.9rem;
+    }
+    /* .در صورت حساسیت بالا در خصوص اندازه فونت ها میتوان در اینجا تنظیما لازم را انجام داد */
+    .bug-1{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .home__photo{
+        width: 50rem;
+        height: 50rem;
+        background-position: -6rem;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    
+    .container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .abute__discription{
+        font-size: 1.5rem;
+        letter-spacing: .03rem;
+    }
+    .abute__cover ,.abute__content{
+        flex-basis: 50%;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    .nav-logo{
+        font-size: 5rem;
+    }
+    .menu__item{
+        margin-right: 2rem;
+    }
+    .home__photo{
+        width: 40rem;
+        height: 40rem;
+        margin-left: 0;
+    }
+    .home__name{
+        font-size: 2rem;
+    }
+    .home__title{
+        font-size: 4rem;
+    }
+    .home__caption{
+        font-size: 1.5rem;
+    }
+    .abute__discription{
+        letter-spacing: 0;
+    }
+    .abute{
+        flex-direction: column;
+    }
+    .abute__list--r{
+        display: flex;
+    }
+    .abute__links-wrapper{
+        flex-direction: column;
+        margin-left:11rem;
+    }
+    .abute__link{
+        width: 32rem;
+    }
+    .abute__link--Green{
+        margin-top: 4rem;
+    }
+    .services__item{
+        background-position: -5rem 14rem;
+    }
+    .resome-list__item::before {
+        max-width: 24rem;
+    }
+    .resome-list__text{
+        font-size: 1.5rem;
+    }
+}
+@media only screen  and (max-width: 768px) {
+    *{
+        /* برای رفع مشکل اومدن حایلایت آبی موقع کلیک روی دکمه ها */
+        cursor: default !important;
+    }
+    .menu{
+        background-color: var(--section-bg-color);
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease-in;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu--open{
+        height: 43rem;
+        box-shadow: 0 -0.7rem .5rem 0.5rem  rgba(0, 0, 0, 5%) inset;
+    }
+    .menu__item{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .menu__item:hover{
+        text-align: center;
+        width: 100%;
+    }
+    .menu__item:first-child{
+        margin-top: 2rem;
+    }
+    .nav__toggle-icon{
+        display: flex;
+    }
+    .cover{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 5%);
+        z-index: -1;
+        opacity: 0;
+        transition: all 200 ease-in;
+    }
+    .cover--show{
+        z-index: 99;
+        opacity: 1;
+    }
+    .Home{
+        margin-top: 2rem;
+    }
+    .Home .row{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .home__contant{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    .home__photo{
+        margin: 0 auto;
+        width: 35rem;
+        height: 35rem;
+        background-position: -4rem;
+    }
+    .home .row{
+        flex-direction: column-reverse;
+    }
+    .Home{
+        background-position: -3rem 52rem;
+        height: 70rem; 
+    }
+    .abute__links-wrapper{
+        justify-content: center;
+        flex-direction:none;
+        margin-left:0;
+        flex-direction: row;
+    }
+    .abute__list--r{
+        display: block;
+    }
+    .abute__link{
+        width: 16rem;
+    }
+    .abute__link--Green{
+        margin-top: auto;
+    }
+    .services__item{
+        background-position: 0rem 14rem;
+        background-size: cover;
+        max-width: none;
+    }
+    .resume-list::before,
+    .resume-list__item::before,
+    .resume-content__title::before{
+        content: none;
+        /*(و فقط بر روی کلس هایی اعمال میشود که از المنت کانتنت استفاده کرده باشد) با این کار محتوای سی اس اسش بی تاثیر میشه */
+    }
+    .resume-list__icon{
+        display: none;
+    }
+    .resume-list{
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        box-shadow: none;
+        background-color: transparent;
+        min-height: auto;
+    }
+    .resume-list__item--active{
+        background-color: var(--primery-color);
+        border-radius: 4rem;
+        padding: 1rem 1.5rem;
+        margin-bottom: 0;
+    }
+    .resume-list__text{
+        font-size: 1.6rem;
+        margin: 0;
+    }
+    .resume-content{
+        border-left: none;
+        padding-left: 0;
+    }
+    .portfolio-list{
+        flex-direction: column;
+    }
+    .contactus__map{
+        display: none;
+    }
+    .contact{
+        margin-right: auto;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .home__caption{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    :root.dark-theme .Home{
+    background-image: none;
+}
+    .Home{
+        background-image: none;
+        height: auto;
+    }
+    .abute__links-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: auto;
+    }
+    .abute__link{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .home__title{
+        text-align: center;
+    }
+    .home__photo{
+        width: 30rem;
+        height: 30rem;
+        background-position: -4rem;
+    }
+}
+
